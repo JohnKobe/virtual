@@ -1,0 +1,110 @@
+Properties,,Domains,Ranges,"label xml:lang=""en""","label xml:lang=""zh""","definition xml:lang=""zh""","comment xml:lang=""zh""",URI,isDefinedBy,versionInfo,seeAlso,equivalentProperty,characteristics
+abstract,,Collection or Document,xsd:string,abstract,摘要,资源内容的摘要信息,以提供文献内容梗概为目的，不加评论和补充解释，简明、确切地记述文献重要内容的短文。其基本要素包括研究目的、方法、结果和结论。,pubo:abstract,pubo,1,,,
+attachmentInfo,,DocumentProduct,xsd:string,attachmentInfo,附件信息,附件的相关信息描述,附件的类型和数量说明，如三个光盘,pubo:attachmentInfo,pubo,1,,,
+attachmentNumber,,DocumentProduct,xsd:integer,attachmentNumber,附件数量,附件的数量信息,附件的数量说明，如3,pubo:attachmentNumber,pubo,1,,,
+attachmentType,,AnnexedMatter,xsd:string,attachmentType,附件类型 ,附件的类型信息,附件信息的类型说明，如磁带 光盘,pubo:attachmentType,pubo,1,,,
+accessPath,,ReferencesItem,xsd:string,accessPath,获取路径,参考文献的获取路径,指电子版参考文献的获取路径。,pubo:accessPath,pubo,1,,,
+address,,Agent,xsd:string,address,地址,代理者的通讯地址,团体总部或办公室的通信地址、个人居住地、办公地、就职地的通信地址。,pubo:address,pubo,1,,,
+capacity,,OpticalDisk,xsd:string,capacity,光盘容量,光盘的可存储的数据量,光盘容量，如“15MB”、“300”，默认单位：byte。,pubo:capacity,pubo,1,,,
+coverage,,Collection or Document,xsd:string,coverage,范围,资源内容覆盖范围,资源内容的年代或地理覆盖的范围。,pubo:coverage,pubo ,1,,,
+date,,Thing,xsd:date,date,日期,与资源本身生命周期中的一个事件相关的日期,包含多个子属性，如作者的生年、卒年，机构团体的创办时间、文档的创建时间和修改时间等。,pubo:date,pubo,1,,,
+,copyrightDate,Document,xsd:date,copyrightDate,版权年,资源完成的年份,建议格式为YYYY，如“1998”。,pubo:copyrightDate,pubo,1,,,
+,created,Collection or Document,xsd:date,created,创建日期,资源创作的年份,建议格式为YYYY-MM-DD，如“2013-01-01”。,pubo:created,pubo,1,,,
+,dateOfBirth,Person,xsd:date,dateOfBirth,生年,人出生的年份,建议格式为YYYY，如“1956”。,pubo:dateOfBirth,pubo,1,,,
+,dateOfDeath,Person,xsd:date,dateOfDeath,卒年,人死亡的年份,建议格式为YYYY，如“1956”。,pubo:dateOfDeath,pubo,1,,,
+,firstPublicationDate,DocumentProduct,xsd:date,firstPublicationDate,首版年月,资源第一次出版的年月,建议格式为YYYY-MM，如“2013-01”。,pubo:firstPublicationDate,pubo,1,,,
+,dateOfEstablishment,Agent,xsd:date,dateOfEstablishment,创办时间,机构或团体的创办时间,建议格式为YYYY-MM-DD，如“2013-10-10”。,pubo:dateOfEstablishment,pubo,1,,,
+,printDate,DocumentProduct,xsd:date,printDate,本次印刷年月,文档产品的本次印刷年月,建议格式为YYYY-MM，如“2013-01”。,pubo:printDate,pubo,1,,,
+,dateOfPublication,DocumentProduct,xsd:date,dateOfPublication,本版年月,文档产品的对应版本的出版年月,建议格式为YYYY-MM，如“2013-01”。,pubo:dateOfPublication,pubo,1,,,
+,issued,Collection or DocumentProduct,xsd:date,issued,出版日期,文档产品的出版日期,建议格式为YYYY-MM-DD，如“2013-01-01”。,pubo:issued,pubo,1,,,
+,modified,Collection or Document,xsd:date,modified,修改日期,资源修改的日期,建议格式为YYYY-MM-DD，如“2013-01-01”。,pubo:modified,pubo,1,,,
+description,,Thing,xsd:string,description,描述,资源的说明解释,对某事物的文字描述。对于参考文献项类个体，该属性包含了参考文献项的完整内容。,pubo:description,pubo,1,,,
+opticalDiskMediaType,,OpticalDisk,xsd:string,opticalDiskMediaType,光盘介质类型,光盘介质的类型,如“DVD”、“CD”等。,pubo:opticalDiskMediaType,pubo,1,,,
+edition,,Collection or Document,xsd:string,edition,版本,资源的版本名称,通常是一个文本值，取值可以为“平装本”、“豪华本”、“大字本”、“袖珍本”等。,pubo:edition,pubo,1,,bibo:edition,
+formatSize,,Document,xsd:string,formatSize,幅面尺寸,出版物单页幅面大小的称谓,出版物单页幅面大小，取值为出版物的宽度*长度，如“130*184”、“185*260”，单位为毫米。,pubo:formatSize,pubo,1,,,
+familyName,,Person,xsd:string,familyName,姓氏,个人的姓氏,不包括名字。,pubo:familyName,pubo,1,,,
+faxNumber,,Agent,xsd:string,faxNumber,传真,代理者的传真,传真号码。,pubo:faxNumber,pubo,1,,,
+fileInfo,,Document,xsd:string,fileInfo,文件信息,有关文件格式的信息,包含多个子属性，如文件校验值、校验方法、音视频文件的播放时长等。,pubo:fileFormat,pubo,1,,,
+,checksum,Document,xsd:string,checksum,校验值,文档通过校验方法获得的校验值,文档通过校验算法获得的校验值，如MD5值。,pubo:checksum,pubo,1,,,Functional Property
+,checksumAlgorithm,Document,xsd:string,checksumAlgorithm,校验方法,以校验为目的的文档编码方法,以校验为目的的文档编码方法，如MD5。,pubo:checksumAlgorithm,pubo,1,,,Functional Property
+,duration,MediaDocument or DesignDocument,xsd:duration,duration,时长,资源内容的时长,包括播放时间、运行时间等，当资源包含乐谱或动作谱时，持续时间也包括表演时间。,pubo:duration,pubo,1,http://schema.org/duration,,
+,fileSize,Document,xsd:string,fileSize,文件大小,文件大小的字节数,文件大小，如“18MB”，默认单位：byte。,pubo:fileSize,pubo,1,http://schema.org/fileSize,,Functional Property
+,format,MediaDocument or DesignDocument,xsd:string,format,文件格式,有关文件格式的文本信息，遵循mime,文件的格式信息，例如application/pdf,pubo:format,pubo,1,,,Functional Property
+,height,Document,xsd:string,height,文件高度,文件的高度值,如某图片文件高度为“10px”，默认单位：px。,pubo:height,pubo,1,,,Functional Property
+,width,Document,xsd:string,width,文件宽度,文件的宽度值,如某图片文件宽度为“10px”，默认单位：px。,pubo:width,pubo,1,,,Functional Property
+,resolution,Document,xsd:string,resolution,精度,数字化图像中由图像像素等的度量表达的细部清晰度或精细度。,主要用于图像或图像版图书的精度，如“300dpi”，默认单位：dpi。,pubo:resolution,pubo,1,,,Functional Property
+,bitrate,Document,xsd:string,bitrate,比特率,编码码率,音频、视频等流动的速度，该速度被设定为播放速度。,pubo:bitrate,pubo,1,http://schema.org/bitrate,,
+,isDoubleLayer,Document,xsd:boolean,isDoubleLayer,是否双层PDF,是否是双层PDF,如对于双层pdf，取值为true，对于单层pdf，取值为false。,pubo:isDoubleLayer,pubo,1,,,Functional Property
+,isFontEmbedded,Document,xsd:boolean,isFontEmbedded,是否内嵌字体,文档是否内嵌字体图片,文档内是否有偏僻字或字体的字符贴图。,pubo:isFontEmbedded,pubo,1,,,Functional Property
+,isStructureIncluded,Document,xsd:boolean,isStructureIncluded,是否包含逻辑结构信息,文档是否包含逻辑结构信息,取值为布尔值。,pubo:isStructureIncluded,pubo,1,,,Functional Property
+,isBookmarkScriptHtml,LayoutTextDocument,xsd:boolean,isBookmarkScriptHtml,书签上下脚标替代,用来指明书签的上下脚标,书签的上下脚标是否采用html语法替代,pubo:isBookmarkScriptHtml,pubo,1,,,Functional Property
+,isBookmarkSymbolReplaced,LayoutTextDocument,xsd:boolean,isBookmarkSymbolReplaced,书签符号替代,用来指明书签的符号替代,书签的集外字及特殊符号是否用其他符号替代,pubo:isBookmarkSymbolReplaced,pubo,1,,,Functional Property
+,isCollated,LayoutTextDocument,xsd:boolean,isCollated,是否全文校勘,用来指明是否全文校勘,文档是否做了全文校勘,pubo:isCollated,pubo,1,,,Functional Property
+,isFontSizeSet,LayoutTextDocument,xsd:boolean,isFontSizeSet,字体字号是否设置,用来指明字体字号是否设置,全文的字体字号是否设置,pubo:isFontSizeSet,pubo,1,,,Functional Property
+,isLinkHtml,LayoutTextDocument,xsd:boolean,isLinkHtml,文内链接是否为html语法,用来指明文内链接是否为html语法,文内链接是否采用html语法,pubo:isLinkHtml,pubo,1,,,Functional Property
+,isSubsetEmbedded,LayoutTextDocument,xsd:boolean,isSubsetEmbedded,是否嵌入子集,用来指明是否嵌入子集,文档是否嵌入子集,pubo:isSubsetEmbedded,pubo,1,,,Functional Property
+,isVectorized,LayoutTextDocument,xsd:boolean,isVectorized,是否矢量化,用来指明是否矢量化,线条是否矢量化,pubo:isVectorized,pubo,1,,,Functional Property
+gender,,Person,xsd:string,gender,性别,个人的性别,取值为“男”或“女”。,pubo:gender,pubo,1,,prism:edition,
+identifier,,DocumentProduct or DocumentContainer or Collection,xsd:string,identifier,标识符,在特定上下文环境中，基于资源的一个明确的标识,包含多个子属性，如中国标准书号、CODEN、国内统一连续出版物号等。,pubo:identifier,pubo,1,,,
+,isbn,DocumentProduct or DocumentContainer,xsd:string,isbn,ISBN,中国标准书号,由13位数字组成，包括EANUCC前缀、组区号、出版者号、出版序号、校验码。,pubo:isbn,pubo,1,,,Functional Property
+,coden,DocumentProduct or DocumentContainer,xsd:string,coden,CODEN,由美国化学文摘社所属国际CODEN服务处为科技期刊等连续出版物分配的统一刊名缩写代码,是国际公认的刊名缩写代码，具有唯一性，由六位字符组成，前四位为基本码，为期刊的刊名缩写，取英文期刊名称每个实词词头，中文期刊则采用汉语拼音，按其汉语拼音刊名给出码，不足4个实词时，用其他词补充。第5位为查重区分码，第六位为校验码。,pubo:coden,pubo,1,,,Functional Property
+,doi,DocumentProduct or DocumentContainer,xsd:string,doi,DOI,数字对象唯一标识符,体现形式主要包括：二维码、条形码、字符码、网络域名等，数字对象唯一性，是其典型特征。,pubo:doi,pubo,1,,prism:doi,Functional Property
+,issn,DocumentProduct or DocumentContainer or Collection,xsd:string,issn,ISSN,国际标准连续出版物编号,由ISSN注册机构分配给丛编的标识符。,pubo:issn,pubo,1,,,Functional Property
+,oclcnum,DocumentProduct or DocumentContainer,xsd:string,oclcnum,联机计算机图书馆中心控制号,Online Computer Library Center Number，即联机计算机图书馆中心控制号,与联机计算机图书馆中心的在线编目联合目录中的记录相联系，按顺序分配的唯一的编码。,pubo:oclcnum,pubo,1,,,Functional Property
+,upc,DocumentProduct or DocumentContainer,xsd:string,upc,UPC,美国统一代码委员会制定的一种商品用条码,是最早大规模应用的条码，其特性是一种长度固定、连续性的条码，目前主要在美国和加拿大使用，由于其应用范围广泛，故又被称万用条码。 UPC码仅可用来表示数字，故其字码集为数字0~9。,pubo:upc,pubo,1,,,Functional Property
+,cn,DocumentProduct or DocumentContainer or Collection,xsd:string,cn,CN,国内统一连续出版物号,由国家新闻出版管理部门负责分配给中国连续出版物的唯一代码。以CN为标识符，由2位地区代码和4位地区序号共6位数字以及分类号组成。,pubo:cn,pubo,1,,,
+,cipCode,DocumentProduct or DocumentContainer,xsd:string,cipCode,CIP核字编号,CIP核字编号,在图书出版过程中编制的书目数据工作。,pubo:cipCode,pubo,1,,,
+,clcCode,DocumentProduct or DocumentContainer,xsd:string,clcCode,中图分类号,中国图书馆分类法的编号,是指采用《中国图书馆分类法》对科技文献进行主题分析，并依照文献内容的学科属性和特征，分门别类地组织文献，所获取的分类代号,pubo:clcCode,pubo,1,,,
+imageFormat,,Image,xsd:string,imageFormat,图像格式,与图像格式相关的数值属性,包含多个子属性，如图片的色彩空间、压缩算法、exif信息。,pubo:imageFormat,pubo,1,,,
+,colorType,Image,xsd:string,colorType,色彩空间,图像的色彩空间,图像的色彩空间，如sRGB，YCrCb等。,pubo:colorType,pubo,1,,,
+,compressionAlgorithm,Image,xsd:string,compressionAlgorithm,压缩算法,图像使用的压缩算法,图像使用的压缩算法，如FpuboT，Zigzag Scan等。,pubo:compressionAlgorithm,pubo,1,,,
+,exifData,Image,xsd:string,exifData,可交换图像文件数据,记录数码照片的属性信息和拍摄信息的数据,附加于图像文件之中的，有关数码相机拍摄信息的内容和索引图，或图像处理软件的版本信息。,pubo:exifData,pubo,1,,,
+locator,,Document,xsd:string,locator,定位符,标记资源位置、顺序的定位符,用一个整数表示文档的位置关系、顺序关系，包含多个子属性，如页码范围、起始页码、结束页码等。,pubo:locator,pubo,1,,,
+,gradeNumber,ContentSection,xsd:integer,gradeNumber,级别号,内容单元的级别号,主要指目次项和参考文献项的级别号，取值为一个整数。,pubo:gradeNumber,pubo,1,,,
+,issueNumber,Issue,xsd:integer,issueNumber,期号,期刊每一期的编号,取值为一个整数,pubo:issueNumber,pubo,1,,prism:issue,
+,sectionNumber,Document,xsd:integer,sectionNumber,节号,文档的小节号,文档的小节号，取值为一个整数。,pubo:sectionNumber,pubo,1,,,
+,sequenceNumber,ContentSection,xsd:integer,sequenceNumber,顺序号,内容单元的顺序号,主要指目次项和参考文献项的顺序号，取值为一个整数。,pubo:sequenceNumber,pubo,1,,,
+,volumeNumber,Document,xsd:integer,volumeNumber,卷号,期刊或丛书中单本的卷号,对于期刊，指从期刊按年度顺序逐年累加的编年号，取值为一个整数。,pubo:volumeNumber,pubo,1,,prism:volume,
+,digitalBeginNumber,Document,xsd:integer,digitalBeginNumber,电子版开始页码,电子版文档的起始页码,内容在电子版文档的起始页码，取值为一个整数。,pubo:digitalBeginNumber,pubo,1,,,Functional Property
+,digitalEndNumber,Document,xsd:integer,digitalEndNumber,电子版结束页码,电子版文档的结束页码,内容在电子版文档的结束页码，取值为一个整数。,pubo:digitalEndNumber,pubo,1,,,Functional Property
+,paperBeginNumber,Document,xsd:string,paperBeginNumber,纸书开始页码,纸书文档的起始页码,内容在纸书文档的起始页码，取值为字符串。,pubo:paperBeginNumber,pubo,1,,,Functional Property
+,paperEndNumber,Document,xsd:string,paperEndNumber,纸书结束页码,纸书文档的起始页码,内容在纸书文档的结束页码，取值为字符串。,pubo:paperEndNumber,pubo,1,,,Functional Property
+,paperPageNumber,Document,xsd:string,paperPageNumber,纸书页码,纸书文档的页码,内容在纸书文档的页码，取值为字符串。,pubo:paperPageNumber,pubo,1,,,Functional Property
+,digitalPageNumber,Document,xsd:integer,digitalPageNumber,电子版页码,电子版文档的页码,内容在电子版文档的页码，取值为一个整数。,pubo:digitalPageNumber,pubo,1,,,Functional Property
+mbox,,Agent,xsd:string,mbox,电子邮箱,代理者的电子邮箱,格式为：xxx@xxx.com。,pubo:mbox,pubo,1,,,
+editionNumber,,DocumentProduct,xsd:string,editionNumber,版次,文档产品的版次,如“1”、“第2版”。,pubo:editionNumber,pubo,1,,,
+reprintNumber,,DocumentProduct,xsd:integer,reprintNumber,印次,文档产品的印刷次数,取值为整数，如“1”。,pubo:reprintNumber,pubo,1,,,
+pages,,Document,xsd:integer,pages,页数,文档的总页数,取值为整数，如一本书或一篇文章的页数，分别取值为“341”，“12”。,pubo:pages,pubo,1,,bibo:numberOfPages,
+numberOfVolumes,,Collection,xsd:string,numberOfVolumes,卷数,文档集合包含的文档卷数,主要指丛书包含的单本书籍数。,pubo:numberOfVolumes,pubo,1,,bibo:numberOfVolumes,
+phoneNumber,,Agent,xsd:string,phoneNumber,电话号码,代理者的电话号码,建议采用统一格式。如区号-电话号。,pubo:phoneNumber,pubo,1,,,
+placeOfPublication,,DocumentProduct,xsd:string,placeOfPublication,出版地,出版单位所在地,,pubo:placeOfPublication,pubo,1,,,
+price,,Collection or Document,xsd:string,price,定价,集合或文档的定价,如“15RMB”，“20美元”。默认单位：RMB。,pubo:price,pubo,1,,,
+productFormat,,DocumentProduct,xsd:string,productFormat,成品属性,文档产品的属性,包含多个子属性，如产品的厚度、是否有封面、子集类型等。,pubo:productFormat,pubo,1,,,
+,depth,DocumentProduct,xsd:string,depth,厚度,文档产品的厚度,如“3cm”。默认单位：cm。,pubo:depth,pubo,1,,,
+,isCoverIncluded,DocumentProduct,xsd:boolean,isCoverIncluded,是否带封面,文档产品是否有封面,如包含封面取值为“true”，否则为“false”。,pubo:isCoverIncluded,pubo,1,,,
+,subsetType,DocumentProduct,xsd:string,subsetType,子集类型 ,文档产品的子集类型,如“CEBX子集类型”。,pubo:subsetType,pubo,1,,,
+,weight,DocumentProduct,xsd:string,weight,质量,文档产品的重量,图书重量，如“1.5kg”。默认单位：g。,pubo:weight,pubo,1,,,
+matrixCode,,DocumentProduct,xsd:string,matrixCode,二维码,文档产品的二维码,一种矩阵二维码符号。,pubo:matrixCode,pubo,1,,,
+barCode,,DocumentProduct,xsd:string,barCode,出版物条码,文档产品的标准条码,是将宽度不等的多个黑条和空白，按照一定的编码规则排列，用以表达一组信息的图形标识符。,pubo:barCode,pubo,1,,,
+text,,Document,xsd:string,text,文本内容,文档的文本内容,取值为内容文本。,pubo:text,pubo,1,http://schema.org/text,,
+title,,Thing,xsd:string,title,题名,泛指书名、刊名和文章名等。,,pubo:title,pubo,1,,,
+,parallelTitle,DocumentProduct,xsd:string,parallelTitle,并列题名,另一种语言和/或文字的正题名（或无总题名出版物中的单独著作题名）；或者等同正题名的另一种语言/或文字的题名。,并列题名也可能与丛编/分丛编说明中的正题名一起出现。,pubo:parallelTitle,pubo,1,,,
+,seriesTitle,DocumentProduct,xsd:string,seriesTitle,丛书名,一组相互关联的单独出版物，每种出版物除有自身的正题名外，还有一个适用于整组的集合名称。,各单独出版物可能有编号，也可能没有编号。,pubo:seriesTitle,pubo,1,,,
+,uniformTitle,DocumentProduct,xsd:string,uniformTitle,统一题名,对具有多种题名的文献所确定的标准题名。,便于检索和分类的一种题名。,pubo:uniformTitle,pubo,1,,,
+,abbreviatedTitle,DocumentProduct or Chapter,xsd:string,abbreviatedTitle,缩略题名,通常用于外文期刊名称的缩写,便于外文期刊的引用,pubo:abbreviatedTitle,pubo,1,,,
+,subseriesTitle,DocumentProduct,xsd:string,subseriesTitle,附属丛书名,在一套丛书中又将部分图书组成丛书的名称。,著录于正丛书名之后，其前用“.”标识。,pubo:subseriesTitle,pubo,1,,,
+,alternativeTitle,DocumentProduct or Chapter,xsd:string,alternativeTitle,交替题名,题名页的正题名有两个或两个以上的部分组成，其中居于“又名”或其他等同词之后的题名。,由两部分组成的正题名（每部分都有一个独立的题名形式）的第二部分，两部分之间用“or“或另一种语言的对应词连接。,pubo:alternativeTitle,pubo,1,,,
+,name,Agent,xsd:string,name,名字,代理者的名字,代理者包括机构、团体和个人，对于个人包括姓氏和名字。,pubo:name,pubo,1,,,
+wordCount,,Document,xsd:string,wordCount,字数,文档的字数,如“163”，“15万字”。默认单位：字。,pubo:wordCount,pubo,1,,,
+zipCode,,Agent,xsd:string,zipCode,邮政编码,代理者的邮政编码,符合邮政编码书写规范，如“100871”。,pubo:zipCode,pubo,1,,,
+contentURL,,Document,xsd:string,contentURL,文件URL,文档文件的URL,关联文档与其文件的URL。,pubo:contentURL,pubo,1,http://schema.org/contentUrl,,
+homepage,,Thing,xsd:string,homepage,主页,资源的主页,通常为一个公开的网络文档，可以从中获取资源的信息。,pubo:homepage,pubo,1,,,
+keyword,,Document,xsd:string,keyword,关键词,用来标明图书、文件、文章等主题的词或词组。,主要指可用于检索的关键词。,pubo:keyword,pubo,1,,,
+rights,,Thing,xsd:string,rights,权限,资源本身的所有者权利信息或被赋予的权利信息,通常指与资源相关的各种产权声明，包括知识产权。,pubo:rights,pubo,1,,,
+typeOfAnimation,,Animation,xsd:string,typeOfAnimation,动画类型,动画的类型信息,动画的类型信息，例如粘土动画,pubo:typeOfAnimation,pubo,1,,,
+seriesNumber,,DocumentProduct,xsd:string,seriesNumber,丛书中编号,当前书在丛书中的编号,当前书在丛书中的编号，如3、IV,pubo:seriesNumber,pubo,1,,,
+noteType,,Note,xsd:string,noteType,注释类型,当前注释的类型说明,当前注释的类型说明，如脚注、尾注等,pubo:noteType,pubo,1,,,
+isSubtitleIncluded,,Video,xsd:boolean,isSubtitleIncluded,有无字幕,当前视频是否带有字幕,当前视频是否带字幕，取值为xsd:boolen类型,pubo:isSubtitleIncluded,pubo,1,,,
+isTitlesIncluded,,Video,xsd:boolean,isTitlesIncluded,有无片头,当前视频是否带片头,当前视频是否带有片头,pubo:isTitlesIncluded,pubo,1,,,
+language,,Collection or Document,xsd:string,language,语种,描述资源知识内容的语种,描述作品的语种，建议取值自已有的语种系统，如ISO639-2、ISO639-3、RFC1766。,pubo:language,pubo,2,,,
+subject,,Document,xsd:string,subject,主题,资源的主题,一般而言，一个学科通常采用描述资源内容属性。,pubo:subject,pubo,2,,,

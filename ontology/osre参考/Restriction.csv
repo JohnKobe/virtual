@@ -1,0 +1,20 @@
+Classes,Properties,minCardinality,maxCardinality,allValuesFrom,含义
+Issue,hasPart,1,,,一期期刊至少包含一篇文章
+Issue,hasPart,,,Article,一期期刊只能包含一篇或多篇文章
+Periodical,hasPart,1,,,一种期刊必须至少包含一期的内容
+Periodical,hasPart,,,Issue,期刊只能包含某期或某些期的内容
+Series,hasPart,,1,,一套丛书至少包含一个文档
+Series,hasPart,,,Book,丛书只能包含普通图书产品
+Collection,hasPart,,,Collection or Document,一个资源合集只能包含一或多个资源合集或一或多个文档
+Contents,hasPart,1,,,一个目录的至少包含一个目录项
+Contents,hasPart,,,ContentsItem,一个目录只能包含目录项
+ContentsItem,isPartOf,1,1,,一个目录项只能被一个目录所包含的
+ContentsItem,isPartOf,,,Contents,一个目录项只能被目录所包含的
+References,hasPart,1,,,参考文献至少包含一个参考文献项
+References,hasPart,,,ReferencesItem,参考文献只能包含参考文献项
+ReferencesItem,isPartOf,1,1,,一个参考文献项只能被一个参考文献所包含
+ReferencesItem,isPartOf,,,References,一个参考文献项只能被参考文献所包含的
+Book,isContainedBy,,1,,一个图书产品最多被一个图书容器包含
+BookChapter,isContainedBy,,1,,一个图书章节产品最多被一个图书章节容器包含
+Issue,isContainedBy,,1,,一个期刊产品最多被一个期刊容器包含
+Article,isContainedBy,,1,,一个文章产品最多被一个文章容器包含

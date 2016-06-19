@@ -1,0 +1,49 @@
+Properties,,Domains,Ranges,"label xml:lang=""en""","label xml:lang=""zh""","definition xml:lang=""zh""","comment xml:lang=""zh""",URI,isDefinedBy,versionInfo,seeAlso,equivalentProperty,inverseOf,characteristics
+hasComponent,,Document,DocumentComponent,hasComponent,包含构件,文档包含的文档构件,关联文档及文档构件。,pubo:hasComponent,pubo,1,,,isComponentOf,
+isComponentOf,,DocumentComponent,Document,isComponentOf,是构件,是某文档的文档构件,关联文档构件和包含它的文档。,pubo:isComponentOf,pubo,1,,,hasComponent,
+associatedMedia,,Document,MediaDocument,associatedMedia,媒体文件,文档的媒体文件,关联文档与其媒体文件。,pubo:associatedMedia,pubo,1,http://schema.org/associatedMediaObject,,isAssociatedMediaOf,
+,hasFontImage,Font,Image,hasFontImage,字体文件,字体或偏僻字的图像文件,关联字体或偏僻字和其图片文件。,pubo:hasFontImage,pubo,1,,,,
+contains,,DocumentContainer,Document,contains,包含,容器包含的文档,容器类专有属性，关联容器类个体与文档个体。,pubo:contains,pubo,1,,,isContainedBy,
+contact,,Agent,Person,contact,联系人,机构或团体的联系人,关联机构或团体和其联系人。,pubo:contact,pubo,1,,,,
+contentSection,,Document,ContentSection,contentSection,内容,文档包含的内容单元,关联文档，如单页文档、篇章节文档，与其内容单元。,pubo:contentSection,pubo,1,,,isContentSectionOf,
+contributor,,Collection or Document,Agent,contributor,其他责任者,对资源内容创建作出贡献的其他个人、机构或团体,通过内容表达对作品的实现做出贡献的个人、机构或团体，包括编者、译者、音乐配器者、表演者等。,pubo:contributor,pubo,2,dcterms:contributor,,,
+,editor,Collection or Document,Agent,editor,编者,编纂资源内容的责任者,可以是个人、机构或团体。,pubo:editor,pubo,1,,bibo:editor,,
+,translator,Collection or Document,Agent,translator,译者,翻译资源内容的责任者,可以是个人、机构或团体。,pubo:translator,pubo,1,,bibo:translator,,
+copyrightOwner,,Document,Agent,copyrightOwner,版权持有者,对出版物拥有合法版权的代理者,版权持有者可以是个人、机构或团体。,pubo:copyrightOwner,pubo,1,http://schema.org/copyrightHolder,,,
+author,,Collection or Document,Agent,author,作者,创建资源的主要责任者,对作品的创作负有责任的个人、机构或团体。,pubo:author,pubo,1,,,,
+distributor,,Collection or Document,Agent,distributor,发布者,资源发行的责任者,,pubo:distributor,pubo,1,,bibo:distributor,,
+embeddedAudio,,Document,Audio,embeddedAudio,内嵌音频,文档嵌入的音频,关联文档与其嵌入的音频。,pubo:embeddedAudio,pubo,1,http://schema.org/audio,,,
+embeddedFont,,Document,Font,embeddedFont,内嵌字体文件,文档嵌入的字体文件,关联文档与其嵌入的字体文件。,pubo:embeddedFont,pubo,1,,,,
+embeddedVideo,,Document,Video,embeddedVideo,内嵌视频,文档嵌入的视频,关联文档与其嵌入的视频。,pubo:embeddedVideo,pubo,1,http://schema.org/video,,,
+formerAgent,,Agent,Agent,formerAgent,前机构,机构的前任机构,关联当前机构和其前机构（如，改名前机构）。,pubo:formerAgent,pubo,1,,,,Transtive Property
+generates,,DesignDocument,Document,generates,设计生成,排版文件生成的文档,关联排版文件和其生成的文档。,pubo:generates,pubo,1,,,isGeneratedBy,
+hasPart,,Thing,,hasPart,包含,资源物理上或逻辑上包含的相关资源,关联资源与其包含的相关资源,pubo:hasPart,pubo,1,,,isPartOf,
+illustrator,,Document,Agent,illustrator,插图作者,文档插图的作者,关联文档和其插图作者，通常为一本书或一本期刊的插图作者。,pubo:illustrator,pubo,1,http://schema.org/illustrator,,,
+isAssociatedMediaOf,,MediaDocument,Document,isAssociatedMediaOf,编码文件,媒体素材的文档,关联媒体素材与它的文档。,pubo:isAssociatedMediaOf,pubo,1,,,associatedMedia,
+isContainedBy,,Document,DocumentContainer,isContainedBy,被包含,文档被某容器包含,关联文档和容器。,pubo:isContainedBy,pubo,1,,,contains,
+isContentSectionOf,,ContentSection,Document,isContentSectionOf,是内容单元,内容单元属于的文档,关联内容单元与其所属文档。,pubo:isContentSectionOf,pubo,1,,,contentSection,
+isGeneratedBy,,Document,DesignDocument,isGeneratedBy,被设计生成,文档使用的排版文件,关联文档和其排版文件。,pubo:isGeneratedBy,pubo,1,,,generates,
+isPartOf,,Thing,,isPartOf,被包含,一个资源被另一个资源物理上或逻辑上所包含,关联资源与包含它的资源。,pubo:isPartOf,pubo,1,,,hasPart,
+member,,Group,Person,member,成员,团队的成员,关联团队和它的成员。,foaf:member,foaf,0.1,,,,
+producer,,Collection or Document,Agent,producer,制作人,影视、录音制品的制作事务、生产的总负责人。,关联文档，主要指音频、视频文档，和其制作人。,pubo:producer,pubo,1,,bibo:producer,,
+publications,,Agent,Collection or Document,publications,出版物,代理者的所有出版物,关联代理者和其出版的文档，如某作者的出版物列表。,foaf:publications,foaf,0.1,,,,
+publisher,,Collection or Document,Agent,publisher,出版者,出版单位,,pubo:publisher,pubo,2,dcterms:publisher,,,
+relation,,Thing,,relation,关联,资源的相关资源,包含评论、转录和注释三个子属性。建议取值为相关资源的URI。,pubo:relation,pubo,2,dcterms:relation,,,
+,reviewOf,Document,Document,reviewOf,评论,文档的评论文档,关联文档和其评论文档。,pubo:reviewOf,pubo,1,,bibo:reviewOf,,
+,transcriptOf,Document,Document,transcriptOf,转录,文档的转录文档,关联文档和其转录文档。,pubo:transcriptOf,pubo,1,,bibo:transcriptOf,,
+,annotates,Note ,Document,annotates,注释,注释标注的文档,关联注释和其解释的文档。,pubo:annotates,pubo,1,,bibo:annotates,,
+type,,Thing,,type,类型,资源的性质或类型,关联资源和其类型。,pubo:type,pubo,1.1,dc:type,,,
+,ancillaryType,AncillaryPart,AncillaryDocType,ancillaryType,辅文类型,辅文的类型,关联辅文和辅文类型，辅文类型包括序、跋、致谢等。取值为AncillaryDocType类。,pubo:ancillaryType,pubo,1,,,,Functional Property
+,coverType,Cover ,BookCoverType,coverType,封面类型,封面的类型,关联封面和封面类型，封面类型包括封一、封二等。取值为BookCoverType类。,pubo:coverType,pubo,1,,,,Functional Property
+,applicationType,DocumentProduct,ProductType,applicationType,应用类型,文档产品的类型,关联文档和产品类型，产品类型主要指产品用途，如纸本书、电子书等。,pubo:applicationType,pubo,1,,,,Functional Property
+,packagingType,Packaging ,PackagingType ,packagingType,包装类型,出版物包装的类型,关联文档包装和包装类型，包装类型包括环衬、腰封、封套等。取值为PackagingType类。,pubo:packagingType,pubo,1,,,,Functional Property
+,referencesType,ReferencesItem,ReferencesType,referencesType,参考文献类型,参考文献的类型,关联参考文献和参考文献类型，参考文献类型包括普通图书、会议录、汇编等。取值为ReferencesType类。,pubo:referencesType,pubo,1,,,,Functional Property
+,pageType,SinglePage,DocPageType,pageType,页面类型,单页的的页面类型,关联单页和页面类型，页面类型包括扉页、版权页等。取值为DocPageType类。,pubo:pageType,pubo,1,,,,Functional Property
+,metadataType,MetadataDocument,MetadataType,metadataType,元数据文件类型,元数据文件的元数据类型,关联元数据和元数据类型，元数据类型包括DC元数据，Marc21元数据等。取值为MetadataType类。,pubo:metadataType,pubo,1,,,,
+,status,Document,DocumentStatus,status,文档状态,文档的文档状态,关联文档和文档状态，文档状态包括录用，拒绝，已审核等。取值为DocumentStatus类。,pubo:status,pubo,1,,bibo:status,,
+,processType,LayoutTextDocument,ProcessType,processType,加工类型,文档的加工类型,"文档的加工类型,例如单层矢量、双层矢量，取值为ProcessType",pubo:processType,pubo,1,,,,Functional Property
+,specialSymbolType,LayoutTextDocument,SpecialSymbolType,specialSymbolType,集外字及特殊符号类型,文档对于集外字和特殊符号的处理,"文档对于集外字和特殊符号的处理,如造字、图片，取值为SpecialSymbolType",pubo:specialSymbolType,pubo,1,,,,Functional Property
+,colorMode,Image or LayoutTextDocument,ColorMode,colorMode,色彩模式,图片和版式文本文档的色彩模式,图片和版式文本文档的色彩模式，如灰度二值等，取值为ColorMode,pubo:colorMode,pubo,1,,,,Functional Property
+workAt,,Person,Organization or Group,workAt,工作机构,个人的工作机构,关联个人和其工作机构。,pubo:workAt,pubo,1,,,,
+hasMetadata,,DocumentProduct,MetadataDocument,hasMetadata,元数据文档,文档的元数据文件,关联文档与其元数据文件。,pubo:hasMetadata,pubo,1,,,isMetadataOf,
+isMetadataOf,,MetadataDocument,DocumentProduct,isMetadataOf,是元数据文档,是某文档的元数据文件,关联元数据文件与文档。,pubo:isMetadataOf,pubo,1,,,hasMetadata,

@@ -1,0 +1,21 @@
+Classes,,,,"label xml:lang=""zh""","label xml:lang=""en""","definition xml:lang=""zh""","comment xml:lang=""zh""",,URI,versionInfo,isDefinedBy,disjointWith,equivalentClass
+Relic,,,,文物,Relic,,,,relico:Relic,1,relico,,
+Graphics,,,,影像,Graphics,,,,relico:Graphics,1,relico,,
+ ,Graphic2D,,,二维影像,Graphics2D,,,,relico:Graphic2D,1,relico,,
+,Graphic3D,,,三维影像,Graphic3D,,,,relico:Graphic3D,1,relico,,
+Agent,,,,代理者,Agent,行为的直接执行者或驱动者,包括个人、机构和团体。,包括个人、机构和团体,relico:Agent,1,relico,Collection Document Enumeration ,foaf:Agent
+,Person,,,个人,Person,一个个人或是由个人建立的识别身份。,包括活着的、死亡的、真实的和虚拟的人。,一个个人或是由个人建立的识别身份（单独的或和其他一个或多个人的合作），包括活着的、死亡的、真实的和虚拟的人。,relico:Person,1,relico,,foaf:Person
+,Organization,,,组织机构,Organization,社会组织机构,包括学校、出版社、公司等。,社会组织机构，如学校、社团、公司等,relico:Organization,1,relico,,foaf:Organization
+,Group,,,团体,Group,通过一个特定的名称和多项活动或是一项活动所识别的团体。,如一个组织、一群人和/或多个组织。,,relico:Group,1,relico,,foaf:Group
+Annotation,,,,注释,Annotation,,,,relico:Annotation,1,relico,,
+,Note,,,参考文档,Note,说明，附加信息,注释内容,,relico:Note,1,relico,,
+,Media,,,媒体,Media,用计算机文件格式表示的各种资源,媒体文档的文件格式包括：mp3、mp4、pdf、doc、ceb、indd、psd等。,,relico:Media,1,relico,,
+,,Video,,视频,Video,用于存储动态或静态图像的媒介,与录像带播放机或DVD播放机等播放设备配合使用，包括用于存储数码或模拟图像的媒介。,与录像带播放机或DVD播放机等播放设备配合使用，包括用于存储数码或模拟图像的媒介。,relico:Video,1,relico,,
+,,Audio,,音频,Audio,存储录音的媒介。,需与播放设备配合使用，如唱机、录音机、CD播放器或MP3播放器，包括存储数码与模拟声音的媒介。,需与播放设备配合使用，如唱机、录音机、CD播放器或MP3播放器，包括存储数码与模拟声音的媒介。,relico:Audio,1,relico,,
+Event,,,,事件,,,,,relico:Event,1,relico,,
+Enumeration,,,,受控术语表,Enumeration,受控术语表，对应OWL中的枚举类。,该类规定的个体，在使用中相当于受控词汇。,,relico:Enumeration,1,relico,,
+,MetadataType,,,元数据类型,MetadataType,表示元数据的类型,,,relico:MetadataType,1,relico,,
+Classification,,,,分类,,,,,relico:Classification,1,relico,,
+,Concept,,,skos的概念类,Concept,skos的概念类，用于表示分类,skos的概念类，用于表示分类,,skos:Concept,1,skos,,
+List,,,,列表,List,用于描述列表或列表类结构,用于描述列表或列表类结构，是类的一个实例。,用于描述列表或列表类结构，是类的一个实例。,rdf:List,2004,rdf,Collection Agent Enumeration ,
+Resource,,,,资源,Resource,所有用RDF描述的对象,是一个包括所有的类，其他的类都是它的子类。,是一个包括所有的类，其他的类都是它的子类。,rdf:Resource,2004,rdf,,
