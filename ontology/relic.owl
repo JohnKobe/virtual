@@ -1,0 +1,1275 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#"
+     xml:base="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#address -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#address">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Agent"/>
+        <rdfs:comment xml:lang="zh">代理人地址</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#agentID -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#agentID">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Agent"/>
+        <rdfs:comment xml:lang="zh">代理人标识</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#alternative -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#alternative">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Relic"/>
+        <rdfs:comment>文物别名</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#completeness -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#completeness">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#currentCondition"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Relic"/>
+        <rdfs:comment xml:lang="zh">完缺程度</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#conservation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#conservation">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#currentCondition"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Relic"/>
+        <rdfs:comment xml:lang="zh">保护级别</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#context -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#context">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Relic"/>
+        <rdfs:comment xml:lang="zh">文物背景信息</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#created -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#created">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#date"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Relic"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#createdPlace -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#createdPlace">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Relic"/>
+        <rdfs:comment xml:lang="zh">文物创作地点</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#creator -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#creator">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Relic"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Agent"/>
+        <rdfs:comment xml:lang="zh">文物创建者</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#currentCondition -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#currentCondition">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Relic"/>
+        <rdfs:comment xml:lang="zh">保存现状</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#currentLocation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#currentLocation">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Relic"/>
+        <rdfs:comment xml:lang="zh">文物藏馆</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#date -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#date">
+        <rdfs:comment xml:lang="zh">日期</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#description -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#description">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Agent"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Aggregation"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Annotation"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Event"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Relic"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#VisualDocumentation"/>
+        <rdfs:comment xml:lang="zh">描述信息</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#dimensionExtent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#dimensionExtent">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#measurements"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Relic"/>
+        <rdfs:comment xml:lang="zh">指明量度尺寸的测量范围</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#dimensions -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#dimensions">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#measurements"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Relic"/>
+        <rdfs:comment xml:lang="zh">量度出的尺寸</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#environmentDescription -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#environmentDescription">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#VisualDocumentationItem"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#EnvironmentType"/>
+        <rdfs:comment xml:lang="zh">拍摄环境说明</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#equipment -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#equipment">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#VisualDocumentation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#CameraType"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#ScannerType"/>
+        <rdfs:comment xml:lang="zh">采集设备</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#eventID -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#eventID">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Event"/>
+        <rdfs:comment xml:lang="zh">事件标识</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#eventName -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#eventName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Event"/>
+        <rdfs:comment xml:lang="zh">事件名称</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#eventType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#eventType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Event"/>
+        <rdfs:comment xml:lang="zh">事件类型</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#extent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#extent">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#format"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#VisualDocumentationItem"/>
+        <rdfs:comment xml:lang="zh">文件范围</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#format -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#format">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#VisualDocumentationItem"/>
+        <rdfs:comment xml:lang="zh">格式</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#formatType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#formatType">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#format"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#VisualDocumentationItem"/>
+        <rdfs:comment xml:lang="zh">文件格式</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#hasMember -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#hasMember">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Aggregation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#VisualDocumentation"/>
+        <rdfs:comment xml:lang="zh">有成员</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#hasType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#hasType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Relic"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Classification"/>
+        <rdfs:comment xml:lang="zh">属于分类</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#humanity -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#humanity">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#context"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Relic"/>
+        <rdfs:comment xml:lang="zh">人文背景信息</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#identifier -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#identifier">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Relic"/>
+        <rdfs:comment xml:lang="zh">标识</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#insciptionsLetterform -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#insciptionsLetterform">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Relic"/>
+        <rdfs:comment xml:lang="zh">铭文字体</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#inscriptionsAuthor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#inscriptionsAuthor">
+        <rdfs:comment xml:lang="zh">铭文作者</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#inscriptionsLocation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#inscriptionsLocation">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Relic"/>
+        <rdfs:comment xml:lang="zh">铭文位置</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#inspectDate -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#inspectDate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#VisualDocumentation"/>
+        <rdfs:comment xml:lang="zh">检查日期</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#inspector -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#inspector">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#VisualDocumentation"/>
+        <rdfs:comment xml:lang="zh">检查人</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#isA -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#isA">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#VisualDocumentationItem"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#VisualDocumentation"/>
+        <rdfs:comment xml:lang="zh">是</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#isAnnotationOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#isAnnotationOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Annotation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Relic"/>
+        <rdfs:comment xml:lang="zh">注释内容的主体指定</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#isDerivativeFrom -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#isDerivativeFrom">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#VisualDocumentationItem"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#VisualDocumentationItem"/>
+        <rdfs:comment xml:lang="zh">派生自，描述不同精度图像之间的关系</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#isEventOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#isEventOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Event"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Relic"/>
+        <rdfs:comment xml:lang="zh">事件主体指定</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#isMetadataOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#isMetadataOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#isPartOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#isPartOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Relic"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Relic"/>
+        <rdfs:comment xml:lang="zh">属于，描述单个文物与文物套件的关系</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#isRepresentationOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#isRepresentationOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#VisualDocumentation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Relic"/>
+        <rdfs:comment xml:lang="zh">表示</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#language -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#language">
+        <rdfs:comment xml:lang="zh">语言</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#level -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#level">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Relic"/>
+        <rdfs:comment xml:lang="zh">保护等级</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#lightDescription -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#lightDescription">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#VisualDocumentationItem"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#LightType"/>
+        <rdfs:comment xml:lang="zh">灯光说明</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#link -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#link">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Relic"/>
+        <rdfs:comment xml:lang="zh">链接</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#materialCategory -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#materialCategory">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Relic"/>
+        <rdfs:comment xml:lang="zh">文物材质类别</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#measurements -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#measurements">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Relic"/>
+        <rdfs:comment xml:lang="zh">文物尺寸计量</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#medium -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#medium">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#format"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#VisualDocumentationItem"/>
+        <rdfs:comment xml:lang="zh">存储媒介</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#modelType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#modelType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#VisualDocumentationItem"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#ModelType"/>
+        <rdfs:comment xml:lang="zh">模型类型</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#name -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Agent"/>
+        <rdfs:comment xml:lang="zh">代理人名称</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#owner -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#owner">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#source"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Relic"/>
+        <rdfs:comment xml:lang="zh">捐赠者</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#phone -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#phone">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Agent"/>
+        <rdfs:comment xml:lang="zh">代理人电话</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#photographContent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#photographContent">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#VisualDocumentation"/>
+        <rdfs:comment xml:lang="zh">拍摄部位</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#photographDate -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#photographDate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#VisualDocumentation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#photographDescription -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#photographDescription">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#VisualDocumentation"/>
+        <rdfs:comment xml:lang="zh">拍摄方案描述</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#photographer -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#photographer">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#VisualDocumentation2D"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Agent"/>
+        <rdfs:comment xml:lang="zh">拍摄人</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#place -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#place"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#pointCloudType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#pointCloudType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#VisualDocumentationItem"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#PointCloudType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#precisionType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#precisionType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#VisualDocumentationItem"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#PrecisionType"/>
+        <rdfs:comment xml:lang="zh">精度</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#quantify -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#quantify">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#measurements"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Relic"/>
+        <rdfs:comment xml:lang="zh">数量</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#registeredDate -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#registeredDate">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#source"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Relic"/>
+        <rdfs:comment xml:lang="zh">入馆日期</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#right -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#right">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Aggregation"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Annotation"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Relic"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#VisualDocumentation"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#VisualDocumentationItem"/>
+        <rdfs:comment xml:lang="zh">资源权限</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#role -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#role">
+        <rdfs:comment xml:lang="zh">责任方式</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#softwareUse -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#softwareUse">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#VisualDocumentationItem"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#SoftwareType"/>
+        <rdfs:comment xml:lang="zh">使用软件</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#source -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#source">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Agent"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Relic"/>
+        <rdfs:comment xml:lang="zh">文物来源</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#spatial -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#spatial">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#context"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Relic"/>
+        <rdfs:comment xml:lang="zh">地域信息</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#styles -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#styles">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Relic"/>
+        <rdfs:comment xml:lang="zh">文物风格流派</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#techniques -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#techniques">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Relic"/>
+        <rdfs:comment xml:lang="zh">技法</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#temporal -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#temporal">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#context"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Relic"/>
+        <rdfs:comment xml:lang="zh">时间跨度信息</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#title -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#title">
+        <rdfs:comment xml:lang="zh">标题</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#transferType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#transferType">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#source"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Relic"/>
+        <rdfs:comment xml:lang="zh">来源方式</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#wasPresentAt -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#wasPresentAt">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Agent"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Relic"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Event"/>
+        <rdfs:comment xml:lang="zh">出现于，表示事件参与者与事件的关系</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Agent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Agent">
+        <rdfs:comment xml:lang="zh">代理人</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Aggregation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Aggregation">
+        <rdfs:comment xml:lang="zh">聚合</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Annotation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Annotation">
+        <rdfs:comment xml:lang="zh">注释</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Audio -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Audio">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Media"/>
+        <rdfs:comment xml:lang="zh">音频</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#BlackAndWhitePointCloudAggregation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#BlackAndWhitePointCloudAggregation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Aggregation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#CameraType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#CameraType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Enumeration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Classification -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Classification">
+        <rdfs:comment xml:lang="zh">分类</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#ColorPointCloudAggregation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#ColorPointCloudAggregation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Aggregation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Concept -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Concept">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Classification"/>
+        <rdfs:comment xml:lang="zh">skos的概念</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Enumeration -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Enumeration">
+        <rdfs:comment xml:lang="zh">受控术语表</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#EnvironmentType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#EnvironmentType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Enumeration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Event -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Event">
+        <rdfs:comment xml:lang="zh">事件</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#FormatType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#FormatType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Enumeration"/>
+        <rdfs:comment xml:lang="zh">格式类型</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Group -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Group">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Agent"/>
+        <rdfs:comment xml:lang="zh">团体</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#LensType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#LensType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Enumeration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Level -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Level">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Enumeration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#LightType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#LightType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Enumeration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#LineGraphicAggregation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#LineGraphicAggregation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Aggregation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#List -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#List">
+        <rdfs:comment xml:lang="zh">列表</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#MaterialModelAggregation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#MaterialModelAggregation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Aggregation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Media -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Media">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Annotation"/>
+        <rdfs:comment xml:lang="zh">媒体</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#MetadataType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#MetadataType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Enumeration"/>
+        <rdfs:comment xml:lang="zh">元数据类型</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#ModelType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#ModelType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Enumeration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Note -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Note">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Annotation"/>
+        <rdfs:comment xml:lang="zh">参考文档</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Organization -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Organization">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Agent"/>
+        <rdfs:comment xml:lang="zh">组织机构</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#OriginalImageAggregation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#OriginalImageAggregation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Aggregation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#OriginalPointCloudAggregation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#OriginalPointCloudAggregation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Aggregation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#OrthoImageAggregation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#OrthoImageAggregation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Aggregation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Person">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Agent"/>
+        <rdfs:comment xml:lang="zh">个人</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#PhotographRecordAggregation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#PhotographRecordAggregation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Aggregation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#PointCloudType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#PointCloudType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Enumeration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#PrecisionType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#PrecisionType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Enumeration"/>
+        <rdfs:comment xml:lang="zh">精度类型</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Relic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Relic">
+        <rdfs:comment xml:lang="zh">文物</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#RelicType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#RelicType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Enumeration"/>
+        <rdfs:comment xml:lang="zh">文物类型</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#RepresentImageAggregation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#RepresentImageAggregation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Aggregation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Resource -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Resource">
+        <rdfs:comment xml:lang="zh">资源</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#ScannerType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#ScannerType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Enumeration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#ScanningRecordImageAggregation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#ScanningRecordImageAggregation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Aggregation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#SoftwareType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#SoftwareType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Enumeration"/>
+        <rdfs:comment xml:lang="zh">软件类型</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#TargetType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#TargetType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Enumeration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#TextureImageAggregation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#TextureImageAggregation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Aggregation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#UnfoldedImageAggregation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#UnfoldedImageAggregation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Aggregation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Video -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Video">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Media"/>
+        <rdfs:comment xml:lang="zh">视频</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#VisualDocumentation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#VisualDocumentation">
+        <rdfs:comment xml:lang="zh">影像</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#VisualDocumentation2D -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#VisualDocumentation2D">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#VisualDocumentation"/>
+        <rdfs:comment>二维文物影像</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#VisualDocumentation3D -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#VisualDocumentation3D">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#VisualDocumentation"/>
+        <rdfs:comment>三维文物影像</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#VisualDocumentationItem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#VisualDocumentationItem">
+        <rdfs:comment xml:lang="zh">影像实例</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#3DModelAggregation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#3DModelAggregation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Aggregation"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#ArtecSoftware -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#ArtecSoftware">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#SoftwareType"/>
+        <rdfs:comment xml:lang="zh">阿泰克扫描仪软件</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Canon-5D -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Canon-5D">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#CameraType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Canon-G21 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Canon-G21">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#CameraType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Cinema4D -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Cinema4D">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#CameraType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#CreaformSoftware -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#CreaformSoftware">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#SoftwareType"/>
+        <rdfs:comment xml:lang="zh">形创扫描仪软件</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Geomagic -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Geomagic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#SoftwareType"/>
+        <rdfs:comment xml:lang="zh">杰魔软件</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Sony-Nex7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#Sony-Nex7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#CameraType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#TrimbleSoftware -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#TrimbleSoftware">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#SoftwareType"/>
+        <rdfs:comment xml:lang="zh">天宝扫描仪软件</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#applicateUse -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#applicateUse">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#PrecisionType"/>
+        <rdfs:comment xml:lang="zh">应用级</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#browseUse -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#browseUse">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#PrecisionType"/>
+        <rdfs:comment xml:lang="zh">浏览级</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#colored -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#colored">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#PointCloudType"/>
+        <rdfs:comment xml:lang="zh">彩色点云</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#flashlightOff -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#flashlightOff">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#LightType"/>
+        <rdfs:comment xml:lang="zh">自然光</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#flashlightOn -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#flashlightOn">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#LightType"/>
+        <rdfs:comment xml:lang="zh">摄影灯</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#geometry -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#geometry">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#ModelType"/>
+        <rdfs:comment xml:lang="zh">几何模型</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#grey -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#grey">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#PointCloudType"/>
+        <rdfs:comment xml:lang="zh">黑白点云</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#indoor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#indoor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#EnvironmentType"/>
+        <rdfs:comment xml:lang="zh">封闭摄影棚</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#mesh -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#mesh">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#ModelType"/>
+        <rdfs:comment xml:lang="zh">网格模型</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#outdoor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#outdoor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#EnvironmentType"/>
+        <rdfs:comment xml:lang="zh">开放摄影棚</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#storeUse -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#storeUse">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ouchanghai/ontologies/2016/6/untitled-ontology-4#PrecisionType"/>
+        <rdfs:comment xml:lang="zh">存储级</rdfs:comment>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+
